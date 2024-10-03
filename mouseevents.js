@@ -2,5 +2,8 @@
 //events:Clicks,mouse hover
 //addEventListener(event,callback)
 const myBox = document.getElementById("myBox");
-function changeColour
-myBox.addEventListener('click')
+function changeColor(event){
+        event.target.style.backgroundColor = "pink";
+        event.target.textContent = "OUCH"
+}
+myBox.addEventListener('click',changeColor);
