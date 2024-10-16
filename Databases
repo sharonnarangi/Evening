@@ -30,7 +30,10 @@ SQL Methods we will be using
 5.create.......Create new database and table link  as amny databses or users properties  as possible
 6.join
 
-Importance >>>>>Maintains the acid properties of a database i.e atomicity, concurrency, integrity.
+Importance >>>>>Maintains the acid properties of a database i.e atomicity, concurrency, integrity and durability
+///Check database normalisation
+///Types of normalisation
+///Types of relations
 
 
 
