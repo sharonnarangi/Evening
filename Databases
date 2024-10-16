@@ -1,2 +1,36 @@
 Database is where data is stored.
 Datatypes are like strings etc and I need to know the type of data I am storing.
+A Database is a structured set of data held in a computer or sever that allows you store, create and modify data
+this is done using crude operations ( create,read, update and delete.)
+typesof databases
+Language used in databases is called SQL ....Structured Query Language.
+1. relational database i.e MYSQL meaning structured.(Stores data in tables, columns and rows EG. EXCEL)
+2. NoSQL database i.e. MongoDB, Cassandra etc. meaning unstructured.( They use key value pair, document, graphs)typicallyobjects
+
+
+Relational Databases
+
+table: Also called a relation >>>> A collection of related data.
+row :A single entry in a table representing a set of related data
+column: A vertical list of values in a table representing a single field of data.
+
+
+Keys used in databases
+Primary key: Unique identifier for each row in a table.
+Foreign key: A field in a table that refers to the primary key in another table.
+Composite key: A combination of two or more columns that uniquely identifies a row in a table.
+Superficial Keys
+
+CHECK DIFFERENT TYPES OF KEYS>>>>>Assignment
+SQL Methods we will be using
+1.select
+2.insert
+3.update
+4.delete
+5.create.......Create new database and table link  as amny databses or users properties  as possible
+6.join
+
+Importance >>>>>Maintains the acid properties of a database i.e atomicity, concurrency, integrity.
+
+
+
