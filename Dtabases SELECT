@@ -1,0 +1,86 @@
+todays classs
+/* Filtering Data with WHERE Clause */
+SELECT * FROM students
+WHERE age > 20;
+
+Retrieves all students whose age is greater than 20.
+//
+Using Logical Operators (AND, OR, NOT)
+SELECT * FROM students
+WHERE age > 20 AND course = 'Data Science';
+
+/* ///using or and AND */
+SELECT * FROM students
+WHERE course = 'Data Science' OR course = 'Cybersecurity' AND age > 20;
+
+This query will first evaluate course = 'Cybersecurity' AND age > 20 because AND has a higher precedence, 
+and then apply the OR condition. This might lead to unintended results.
+
+/* //explicit excetution */
+
+SELECT * FROM students
+WHERE (course = 'Data Science' OR course = 'Cybersecurity') AND age > 20;
+By using parentheses, you explicitly tell SQL to first evaluate the OR condition,
+ and then apply the AND with the age > 20 condition, ensuring the correct logic is applied.
+/* 
+Sorting Data with ORDER BY Clause */
+SELECT * FROM students
+ORDER BY age DESC;
+
+Sorts the result by age in descending order.Winnie  Use ASC for ascending order.
+
+/* Limiting the Number of Results */
+SELECT * FROM students
+LIMIT 5;
+Retrieves only the first 5 rows from the result set.
+
+/* Using LIKE for Pattern Matching */
+SELECT * FROM students
+WHERE name LIKE 'J%';
+
+Retrieves students whose names start with the letter "J".
+
+/* Selecting Distinct Values */
+SELECT DISTINCT course FROM students;
+Retrieves unique course names from the table without duplicates.
+................................................................................tomorrow
+Using Aggregate Functions
+
+Aggregate functions like COUNT, SUM, AVG, MAX, and MIN are used to perform calculations on a set of values:
+
+SELECT COUNT(*) FROM students;
+
+Counts the total number of students.
+
+/////
+SELECT AVG(age) FROM students;
+Calculates the average age of the students.
+
+//////////////////////////////* Grouping Results with GROUP BY Clause */
+GROUP BY Clause is used to group the result set by one or more columns:
+
+SELECT course, COUNT(*) AS student_count
+FROM students
+GROUP BY course;
+
+Groups the data by the course column and counts the number of students in each course.
+
+
+/* Using HAVING Clause */
+SELECT course, COUNT(*) AS student_count
+FROM students
+GROUP BY course
+HAVING COUNT(*) > 2;
+
+
+Similar to the WHERE clause but used to filter groups created by the GROUP BY clause,
+ displaying only courses with more than 2 students.
+
+/* Combining Multiple Queries with UNION */
+
+ SELECT name FROM students WHERE course = 'Data Science'
+UNION
+SELECT name FROM students WHERE course = 'Cybersecurity';
+
+Combines the results of two SELECT statements and returns unique 
+names of students enrolled in either course.
