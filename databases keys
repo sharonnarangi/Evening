@@ -1,0 +1,11 @@
+ A Primary Key is a unique identifier for each record in a table. It ensures that no duplicate 
+values exist and that each record can be uniquely identified
+
+A Foreign Key is a field in a table that refers to the Primary Key of another table. It
+establishes a relationship between two tables and ensures data consistency.
+
+A Composite Key is a combination of two or more columns that uniquely identifies each record in a table.
+
+A Candidate Key is a column or a set of columns that can uniquely identify any 
+record in a table. There can be more than one candidate key in a table, but only one 
+can be chosen as the primary key

@@ -7,8 +7,9 @@ Language used in databases is called SQL ....Structured Query Language.
 1. relational database i.e MYSQL meaning structured.(Stores data in tables, columns and rows EG. EXCEL)
 2. NoSQL database i.e. MongoDB, Cassandra etc. meaning unstructured.( They use key value pair, document, graphs)typicallyobjects
 
+TWO TYPES OF DATABASES
 
-Relational Databases
+Relational Databases and Non relational databases(Non SQL)
 
 table: Also called a relation >>>> A collection of related data.
 row :A single entry in a table representing a set of related data
@@ -35,5 +36,5 @@ Importance >>>>>Maintains the acid properties of a database i.e atomicity, concu
 ///Types of normalisation
 ///Types of relations
 
-
+Databases are a collection of data that can easily be accessed.
 
